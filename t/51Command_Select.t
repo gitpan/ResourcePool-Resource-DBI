@@ -1,8 +1,8 @@
 #! /usr/bin/perl -w
 #*********************************************************************
 #*** t/50Command_Select.t
-#*** Copyright (c) 2003 by Markus Winand <mws@fatalmind.com>
-#*** $Id: 51Command_Select.t,v 1.1 2003/01/20 19:00:21 mws Exp $
+#*** Copyright (c) 2003-2004 by Markus Winand <mws@fatalmind.com>
+#*** $Id: 51Command_Select.t,v 1.2 2004/05/02 07:49:00 mws Exp $
 #*********************************************************************
 use strict;
 

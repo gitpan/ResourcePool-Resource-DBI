@@ -1,7 +1,7 @@
 #********************************************************************* 
 #*** lib/ResourcePool/Command/DBI/Execute.pm
-#*** Copyright (c) 2003 by Markus Winand <mws@fatalmind.com>
-#*** $Id: Execute.pm,v 1.2 2003/01/20 19:01:01 mws Exp $
+#*** Copyright (c) 2004 by Markus Winand <mws@fatalmind.com>
+#*** $Id: Execute.pm,v 1.5 2004/05/02 07:48:55 mws Exp $
 #*********************************************************************
 package ResourcePool::Command::DBI::Execute;
 
@@ -12,7 +12,7 @@ use strict;
 use DBI;
 use vars qw(@ISA $VERSION);
 
-$VERSION = "1.0100";
+$VERSION = "1.0101";
 push @ISA, qw(ResourcePool::Command::DBI::Common ResourcePool::Command);
 
 sub execute($$@) {
@@ -43,10 +43,10 @@ sub execute($$@) {
 			} 
 		};
 		if ($rc && ! @_) {
-			die 'Execution of "' . $sql . '" failed: ' . $sth->errstr() . "\n";
+			die 'Execution of "' . $sql . '" failed: ' . $dbh->errstr() . "\n";
 		} else {
 			die ResourcePool::Command::NoFailoverException->new(
-				'Execution of "' . $sql . '" failed: ' . $sth->errstr() . "\n"
+				'Execution of "' . $sql . '" failed: ' . $dbh->errstr() . "\n"
 			);
 		}
 	}

@@ -1,15 +1,13 @@
 ResourcePool::Resource::DBI - DBI bindings for ResourcePool
 
-Copyright (c) 2001-2003 by Markus Winand <mws@fatalmind.com>
+Copyright (c) 2001-2004 by Markus Winand <mws@fatalmind.com>
 
 See COPYRIGHT section in the ResourcePool::Resource::DBI(3pm) manpage.
 
 Recent Changes
 --------------
-  *  The three commands Execute, Select and SelectRow have been 
-     added. This release is a preview, the features are not yet fully 
-     implemented and might therefore not sufficient for you needs 
-     right now. 
+  *  changed use of $sth->errstr() to $dbh->errstr() which seems to 
+     have wider support. Thx to Pavel Shmidt. 
 
 Installation
 ------------
@@ -48,3 +46,4 @@ Authors contact
        e-mail: mws@fatalmind.com
      homepage: http://www.fatalmind.com/
     whishlist: http://www.amazon.de/exec/obidos/wishlist/1JW6LC92SAK62/
+               http://amazon.com/gp/registry/3BXRJP9W3WMDX

@@ -19,3 +19,4 @@ t/30DBI.t
 t/50Command_Execute.t
 t/51Command_Select.t
 t/60Command_connected.t
+META.yml                                 Module meta-data (added by MakeMaker)

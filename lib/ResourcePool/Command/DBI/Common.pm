@@ -1,7 +1,7 @@
 #*********************************************************************
 #*** lib/ResourcePool/Command/DBI/Common.pm
-#*** Copyright (c) 2003 by Markus Winand <mws@fatalmind.com>
-#*** $Id: Common.pm,v 1.1 2003/01/20 19:01:01 mws Exp $
+#*** Copyright (c) 2004 by Markus Winand <mws@fatalmind.com>
+#*** $Id: Common.pm,v 1.3 2004/05/02 07:48:55 mws Exp $
 #*********************************************************************
 package ResourcePool::Command::DBI::Common;
 
@@ -11,7 +11,7 @@ use strict;
 use DBI;
 use vars qw($VERSION);
 
-$VERSION = "1.0100";
+$VERSION = "1.0101";
 
 sub new($$;$@) {
 	my $proto = shift;
