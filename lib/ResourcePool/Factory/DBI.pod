@@ -21,7 +21,7 @@ This class is a factory class for L<DBI|DBI> resources to be used with the Resou
 
 Please have a look at L<ResourcePool::Factory|ResourcePool::Factory> documentation to learn about the purpose of such a factory.
 
-=head2 S<ResourcePool::Factory::DBI-E<gt>new($data_source, $username, $auth, $%attr)>
+=head2 S<ResourcePool::Factory::DBI-E<gt>new($data_source, $username, $auth, \%attr)>
 
 Takes the same arguments as the connect method of the L<DBI|DBI> perl module.
 
@@ -39,7 +39,7 @@ The username used to authenticate.
 
 The password used to authenticate.
 
-=item $%attr
+=item \%attr
 
 L<DBI|DBI> attributes.
 

@@ -1,4 +1,11 @@
-Changelog for ResourcePool
+Changelog for ResourcePool::Resource::DBI
+
+V1.0100 - 2003-02-27
+
+  *  The three commands Execute, Select and SelectRow have been 
+     added. This release is a preview, the features are not yet fully 
+     implemented and might therefore not sufficient for you needs 
+     right now. 
 
 V1.0000 - 2003-01-02
 

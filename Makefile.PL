@@ -1,7 +1,7 @@
 #*********************************************************************
 #*** Makefile.PL
 #*** Copyright (c) 2002 by Markus Winand <mws@fatalmind.com>
-#*** $Id: Makefile.PL,v 1.1 2002/12/22 11:20:18 mws Exp $
+#*** $Id: Makefile.PL,v 1.2 2003/02/27 21:44:38 mws Exp $
 #*********************************************************************
 
 use ExtUtils::MakeMaker qw(prompt WriteMakefile);
@@ -12,8 +12,8 @@ use Data::Dumper;
 my %opts;
 
 $opts{NAME}      = 'ResourcePool::Resource::DBI',
-$opts{VERSION}   = '1.0000';
-$opts{PREREQ_PM} = {'ResourcePool' => '1.0000'
+$opts{VERSION}   = '1.0100';
+$opts{PREREQ_PM} = {'ResourcePool' => '1.0100'
                    ,'DBI'};
 
 if ($ExtUtils::MakeMaker::VERSION >= 5.43) {
